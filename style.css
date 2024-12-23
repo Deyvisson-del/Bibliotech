@@ -1,0 +1,19 @@
+*{
+    /* border: 1px solid red; */
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    color:aliceblue;
+    padding: 1%;
+   background-color: #0c85f0;
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    list-style-type: none;
+}
