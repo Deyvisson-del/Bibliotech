@@ -6,7 +6,7 @@
 
 header{
     color:aliceblue;
-    padding: 1%;
+    /* padding: 1%; */
    background-color: #0c85f0;
 }
 
@@ -16,4 +16,21 @@ header{
     align-items: center;
     gap: 5%;
     list-style-type: none;
+}
+
+.menu .logo{
+    display: flex;
+    justify-content: flex-start;    
+}
+
+.itens-menu{
+    /* color: aliceblue;
+    text-decoration: none; */
+    padding: 1%;
+}
+
+.itens-menu:hover{
+    padding: 1%;
+    background-color: white;
+    color: #0c85f0;
 }
