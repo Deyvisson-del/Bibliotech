@@ -1,16 +1,46 @@
-*{
+* {
     /* border: 1px solid red; */
+    margin: 0;
+    padding: 0;
+    ;
+}
+
+
+main {
+    background-color: #181818;
+}
+
+figure {
     margin: 0;
     padding: 0;
 }
 
-header{
-    color:aliceblue;
-    /* padding: 1%; */
-   background-color: #0c85f0;
+video {
+    width: 100%;
+    height: 60vh;
+    object-fit: cover;
 }
 
-.menu{
+.header {
+    color: aliceblue;
+    width: 100%;
+    /* position: fixed;
+    z-index: 1000; */
+}
+
+.icone {
+    display: inline-block;
+}
+
+.logo {
+    height: 100px;
+    display: flex;
+}
+
+.menu {
+    margin: 0;
+    background-color: aliceblue;
+    background-color: #212121;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -18,19 +48,174 @@ header{
     list-style-type: none;
 }
 
-.menu .logo{
-    display: flex;
-    justify-content: flex-start;    
+.itens-menu {
+    padding: 1%;
+    display: inline-block;
+    border-radius: 5px;
 }
 
-.itens-menu{
-    /* color: aliceblue;
-    text-decoration: none; */
-    padding: 1%;
+.itens-menu a {
+    display: block;
+    text-decoration: none;
+    color: aliceblue;
 }
 
-.itens-menu:hover{
-    padding: 1%;
+.itens-menu:hover,
+a:hover {
     background-color: white;
     color: #0c85f0;
+}
+
+
+.carousel img {
+    height: 70vh;
+    width: 100%;
+    /* margin: 2.8% 0% 0%; */
+}
+
+/* From Uiverse.io by adamgiebl */
+
+.title-card {
+    color: white;
+    text-align: center;
+    margin: 0% 0% 8%;
+}
+
+.paragraph-card {
+    color: white;
+}
+
+.container-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    margin: 5%;
+}
+
+.card {
+    width: 20%;
+    height: 200px;
+    border-radius: 9px;
+    padding: 1px;
+    box-shadow: rgb(12, 116, 235) 0 15px 30px -5px;
+    background-image: linear-gradient(144deg, #0c85f0, #5B42F3 50%, #AF40FF);
+}
+
+.card__content {
+    background: rgb(5, 6, 45);
+    border-radius: 9px;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+}
+
+/* .card-magic {
+    --background: linear-gradient(to left, #f7ba2b 0%, #ea5358 100%);
+    width: 190px;
+    height: 254px;
+    padding: 5px;
+    border-radius: 1rem;
+    overflow: visible;
+    background: #f7ba2b;
+    background: var(--background);
+    position: relative;
+    z-index: 1;
+   } */
+
+/* .card-magic::after {
+    position: absolute;
+    content: "";
+    top: 30px;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    transform: scale(0.8);
+    filter: blur(25px);
+    background: #f7ba2b;
+    background: var(--background);
+    transition: opacity .5s;
+   } */
+
+/* .card-info {
+    --color: #181818;
+    background: var(--color);
+    color: var(--color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+    border-radius: .7rem;
+   }
+    */
+/* .card .title {
+    font-weight: bold;
+    letter-spacing: .1em;
+   } */
+
+/*Hover*/
+/* .card:hover::after {
+    opacity: 0;
+   }
+   
+   .card:hover .card-info {
+    color: #f7ba2b;
+    transition: color 1s;
+   } */
+
+
+/* From Uiverse.io by satyamchaudharydev */
+/* === removing default button style ===*/
+.button {
+    margin: 0;
+    height: auto;
+    background: transparent;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+}
+
+/* button styling */
+.button {
+    --border-right: 6px;
+    --text-stroke-color: rgba(255, 255, 255, 0.6);
+    --animation-color: #0c85f0;
+    --fs-size: 2em;
+    letter-spacing: 3px;
+    text-decoration: none;
+    font-size: var(--fs-size);
+    font-family: "Arial";
+    position: relative;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: 1px var(--text-stroke-color);
+}
+
+/* this is the text, when you hover on button */
+.hover-text {
+    position: absolute;
+    box-sizing: border-box;
+    content: attr(data-text);
+    color: var(--animation-color);
+    width: 0%;
+    inset: 0;
+    border-right: var(--border-right) solid var(--animation-color);
+    overflow: hidden;
+    transition: 0.5s;
+    -webkit-text-stroke: 1px var(--animation-color);
+}
+
+/* hover */
+.button:hover .hover-text {
+    width: 100%;
+    filter: drop-shadow(0 0 23px var(--animation-color))
+}
+
+span {
+    font-size: 1.5em;
+    color: #212121;
 }

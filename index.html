@@ -4,62 +4,161 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Bibliotech</title>
+    <link rel="icon" href="./img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <header class="header">
         <nav>
             <ul class="menu">
-                <li class="logo">Logo</li>
+
+                <div class="icone">
+                    <!-- <img src="./img/logo.png" alt="Imagem estática" class="logo"> -->
+                    <button class="button" data-text="Awesome">
+                        <span class="actual-text">&nbsp;Bibliotech&nbsp;</span>
+                        <span aria-hidden="true" class="hover-text">&nbsp;Bibliotech&nbsp;</span>
+                    </button>
+                </div>
+
                 <li class="itens-menu">QUEM SOMOS</li>
                 <li class="itens-menu">NOSSO ACERVO</li>
                 <li class="itens-menu">RECURSOS</li>
                 <li class="itens-menu">BLOG</li>
                 <li class="itens-menu">BAIXAR</li>
                 <li class="itens-menu"><a href="login.html">Login</a></li>
+
             </ul>
         </nav>
     </header>
 
     <main>
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                        data-bs-target="#staticBackdrop">
-                        avisos
-                    </button>
-                </div>
+
+        <figure>
+            <video autoplay muted loop width="100%" height="80vh">
+                <source src="./img/backgroundvideo.mp4" type="video/mp4">
+            </video>
+            <!-- <figcaption>description</figcaption> -->
+        </figure>
+
+
+
+        <!-- <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
             </div>
-            <!-- Modal -->
-            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-                aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h1 class="modal-title fs-5" id="staticBackdropLabel">Aviso</h1>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <p>
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio ipsa perferendis
-                                pariatur voluptatum vero adipisci dolores accusantium aut sed et? Nam consequatur
-                                perferendis commodi. Nesciunt iste est eligendi delectus mollitia.
-                            </p>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">fechar</button>
-                            <button type="button" class="btn btn-primary">Ok</button>
-                        </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./img/background2.jpg" class="" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>First slide label</h5>
+                        <p>Some representative placeholder content for the first slide.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/background2.jpg" class="" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Second slide label</h5>
+                        <p>Some representative placeholder content for the second slide.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/background2.jpg" class="" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Third slide label</h5>
+                        <p>Some representative placeholder content for the third slide.</p>
                     </div>
                 </div>
             </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div> -->
+
+        <div class="container-cards">
+            <div class="card">
+                <div class="card__content">
+                    <h1 class="title-card">Card 1</h1>
+                    <p class="paragraph-card">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores,
+                        deserunt
+                        eos quos sed sapiente nam quae adipisci excepturi molestias amet aliquam aperiam esse similique
+                        ratione cumque, repudiandae pariatur, ipsum iste?</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card__content">
+                    <h1 class="title-card">Card 2</h1>
+                    <p class="paragraph-card">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores,
+                        deserunt
+                        eos quos sed sapiente nam quae adipisci excepturi molestias amet aliquam aperiam esse similique
+                        ratione cumque, repudiandae pariatur, ipsum iste?</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card__content">
+                    <h1 class="title-card">Card 3</h1>
+                    <p class="paragraph-card">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores,
+                        deserunt
+                        eos quos sed sapiente nam quae adipisci excepturi molestias amet aliquam aperiam esse similique
+                        ratione cumque, repudiandae pariatur, ipsum iste?</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- <div class="container-cards">
+            <div class="card-magic">
+                <div class="card-info">
+                    <h1 class="title-card">Card 1</h1>
+                    <p class="paragraph-card">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores,
+                        deserunt
+                        eos quos sed sapiente nam quae adipisci excepturi molestias amet aliquam aperiam esse similique
+                        ratione cumque, repudiandae pariatur, ipsum iste?</p>
+                </div>
+            </div>
+            <div class="card-magic">
+                <div class="card-info">
+                    <h1 class="title-card">Card 2</h1>
+                    <p class="paragraph-card">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores,
+                        deserunt
+                        eos quos sed sapiente nam quae adipisci excepturi molestias amet aliquam aperiam esse similique
+                        ratione cumque, repudiandae pariatur, ipsum iste?</p>
+                </div>
+            </div>
+            <div class="card-magic">
+                <div class="card-info">
+                    <h1 class="title-card">Card 3</h1>
+                    <p class="paragraph-card">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores,
+                        deserunt
+                        eos quos sed sapiente nam quae adipisci excepturi molestias amet aliquam aperiam esse similique
+                        ratione cumque, repudiandae pariatur, ipsum iste?</p>
+                </div>
+            </div>
+        </div> -->
+
     </main>
-    <footer></footer>
+    <footer>
+        <!-- <div class="container-footer">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt obcaecati officia incidunt, iusto eveniet soluta veritatis praesentium accusantium facilis neque vel? Expedita dolor enim nam quo ex nesciunt eum in?A officia itaque sint fugiat earum tenetur accusamus, odio vitae hic totam ipsum asperiores fuga deleniti quibusdam saepe, sed quos, magni laborum laboriosam consectetur consequatur eius maiores consequuntur. Necessitatibus, nulla!Necessitatibus tempore cupiditate aliquid nisi doloribus repudiandae sint pariatur deserunt vel, sequi numquam ducimus recusandae, tenetur aspernatur voluptate atque et nostrum dicta asperiores maxime porro beatae est quam? Tenetur, tempore.Aspernatur vel eligendi nihil tenetur, voluptates sapiente fugit cupiditate. Debitis nemo quaerat cum similique mollitia iste modi delectus, animi deleniti ut optio quasi fugiat, culpa quisquam laudantium deserunt porro labore?Sunt rem pariatur voluptatum dolorum porro, quisquam doloremque commodi magnam quo veniam autem? Est quis aliquid veritatis incidunt, reprehenderit vero temporibus, vitae doloribus pariatur quae dolorum possimus laborum enim cum.Veniam tempora esse quam neque aspernatur ad tenetur sequi non ipsam odio libero error quod, dolor rem animi nam quo! Praesentium aliquam illo tempora voluptatibus voluptas! Officiis voluptatibus similique dicta?Reprehenderit consequuntur soluta necessitatibus aperiam magni, provident nemo, sit a quae porro at maxime adipisci debitis inventore dolores quisquam, ad ratione illo! Quibusdam, ex error! Laboriosam ipsum at cum quaerat.Fugit consectetur aspernatur sint? Cupiditate omnis sed cum minus sit perferendis sunt ut similique, nisi doloribus ea aut adipisci animi quo dignissimos nesciunt odio laudantium reprehenderit repellat? Odio, nesciunt rem?Voluptate voluptatem quas accusantium veniam et, repellat obcaecati accusamus ut rerum, explicabo exercitationem quam eveniet aspernatur itaque pariatur sed eaque nostrum? Consequuntur cumque voluptas repudiandae dignissimos quis. Repellendus, eum hic.</p>
+        </div> -->
+    </footer>
 
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
